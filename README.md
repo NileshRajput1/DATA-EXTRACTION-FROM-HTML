@@ -11,3 +11,4 @@ This project aims to bridge the gap between non-technical users and their abilit
 * pip (package installer for Python)
   
 1. Clone this project repository: https://github.com/rajput-code/DATA-EXTRACTION-FROM-HTML
+2. install 'pip install -r requirements.txt'
