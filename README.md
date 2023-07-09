@@ -12,3 +12,9 @@ This project aims to bridge the gap between non-technical users and their abilit
   
 1. Clone this project repository: https://github.com/rajput-code/DATA-EXTRACTION-FROM-HTML
 2. Install the requirements.txt: 'pip install -r requirements.txt'
+
+# USAGE
+1. Run the web application by executing the 'app.py' file.
+2. Access the application through your web browser using the provided URL (e.g., http://localhost:5000).
+3. Enter the URL of the website you want to scrape and specify the relevant keywords for data extraction.
+4. Click the "Extract Data" button to retrieve and display the desired data
