@@ -9,4 +9,5 @@ This project aims to bridge the gap between non-technical users and their abilit
 ### Prerequisites: Ensure you have the following software installed on your machine:
 * Python (version 3.7 or higher)
 * pip (package installer for Python)
-1 Clone this project repository: https://github.com/rajput-code/DATA-EXTRACTION-FROM-HTML
+  
+1. Clone this project repository: https://github.com/rajput-code/DATA-EXTRACTION-FROM-HTML
