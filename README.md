@@ -18,3 +18,16 @@ This project aims to bridge the gap between non-technical users and their abilit
 2. Access the application through your web browser using the provided URL (e.g., http://localhost:5000).
 3. Enter the URL of the website you want to scrape and specify the relevant keywords for data extraction.
 4. Click the "Extract Data" button to retrieve and display the desired data
+
+Example: Let the URL be " https://www.reddit.com/ " and the keyword as headings and then clcik on the Extract data button . The following results shows up:
+* Page Description: Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for whatever you're interested in on Reddit.
+* Occurrences of 'headings': 0
+* Headings:
+* Overspeeding "CRETA" accident on Ludiana-Ferozpur road. Must be dumb to overspeed in rainy season.
+* Man runs away with ballot box in Bengal’s Cooch Behar.What kind of democracy is this, democracy has failed in front of TMC goons in Bengal.
+* TMC goons brazenly show guns and threaten an independent candidate in Barrackpore, North 24 Parganas
+* Ghaziabad Station, Delhi-Meerut RapidX
+* Is Delhi really "scary af" or you just wanted reddit Karma ?
+* Stealth level 1000
+* Movie dialogues you use in daily life
+
