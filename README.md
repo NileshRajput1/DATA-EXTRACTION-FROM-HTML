@@ -31,3 +31,8 @@ Example: Let the URL be " https://www.reddit.com/ " and the keyword as headings 
 * Stealth level 1000
 * Movie dialogues you use in daily life
 
+# SCOPE
+This project has significant business relevance and can be used for various purposes, including market research, competitor analysis, and customer feedback analysis. The ability to extract data from websites based on specific keywords empowers non-technical users to gather information efficiently and utilize it for their specific needs.
+
+# DISCLAIMER
+Please note that web scraping should be done responsibly and in accordance with the website's terms of service. It is the user's responsibility to ensure compliance with legal and ethical considerations when using this tool.
