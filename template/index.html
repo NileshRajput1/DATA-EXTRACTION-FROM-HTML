@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Extraction Application</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <style>
+    .custom-bg {
+      animation: changeBgColor 10s infinite;
+    }
+    
+    @keyframes changeBgColor {
+      0% { background-color: #4BC6B9; }
+      25% { background-color: #73C1C6; }
+      50% { background-color: #96C3CE; }
+      75% { background-color: #A79AB2; }
+      100% { background-color: #B57BA6; }
+    }
+  </style>
+</head>
+<body class="custom-bg">
+  <header class="py-8 text-center">
+    <h1 class="text-3xl font-bold">Data Extraction Application</h1>
+    <p class="text-lg">Extract valuable data from websites with ease</p>
+  </header>
+
+  <section class="hero bg-gray-100 py-16">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-center">
+        <img src="https://cdn3.vectorstock.com/i/thumb-large/07/92/extracting-data-glyph-icon-vector-29110792.jpg" alt="Image" class="w-1/2">
+        <form action="/scrape" method="POST" class="w-1/2 ml-8">
+          <div class="mb-4">
+            <input type="text" id="url" name="url" placeholder="Enter URL" required class="w-full py-2 px-4 rounded border-gray-300 focus:outline-none focus:border-blue-400">
+          </div>
+          <div class="mb-4">
+            <input id="keyword" type="text" name="keyword" placeholder="Enter Keyword" required class="w-full py-2 px-4 rounded border-gray-300 focus:outline-none focus:border-blue-400">
+          </div>
+          <div class="text-center">
+            <input type="submit" value="Extract Data" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded cursor-pointer transition duration-500 ease-in-out">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <div id="output" class="container mx-auto px-4 mt-16">
+    {% if output %}
+      <h2 class="text-2xl font-bold">Scraped Data:</h2>
+      <ul class="list-disc list-inside mt-4">
+        {% for link in output %}
+          <li>{{ link }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+
+  <section class="features py-16 bg-gray-200">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">Key Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex items-center">
+          <img src="{{ url_for('static', filename='images/h2.png') }}" alt="Image" class="w-16 h-16">
+          <p class="ml-4">Easy-to-use interface</p>
+        </div>
+        <div class="flex items-center">
+          <img src="{{ url_for('static', filename='images/h3.png') }}" alt="Image" class="w-16 h-16">
+          <p class="ml-4">Keyword-based data extraction</p>
+        </div>
+        <div class="flex items-center">
+          <img src="{{ url_for('static', filename='images/h1.png') }}" alt="Image" class="w-16 h-16">
+          <p class="ml-4">Support for multiple websites</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">How It Works</h2>
+      <ol class="list-decimal list-inside">
+        <li>Enter the website URL</li>
+        <li>Specify the keywords for data extraction</li>
+        <li>Click on the "Extract Data" button</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="testimonials py-16">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8">Testimonials</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="testimonial p-4 border rounded">
+          <p class="mb-4">"This data extraction application is amazing! It saved me hours of manual work."</p>
+          <p class="text-right">- John Doe</p>
+        </div>
+        <div class="testimonial p-4 border rounded">
+          <p class="mb-4">"I highly recommend this application for anyone who needs to extract data quickly and efficiently."</p>
+          <p class="text-right">- Jane Smith</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="py-8 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <nav class="flex justify-between">
+        <ul class="text-white">
+          <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Terms of Service</a></li>
+          <li class="mb-2"><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
+        </ul>
+        <div class="social-icons flex">
+          <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/facebook.png" alt="Facebook" class="w-6 h-6"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/twitter.png" alt="Twitter" class="w-6 h-6"></a>
+          <a href="#"><img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram" class="w-6 h-6"></a>
+        </div>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>  

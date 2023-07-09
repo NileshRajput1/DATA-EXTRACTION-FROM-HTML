@@ -1,0 +1,124 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.cta-button {
+  padding: 7px 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 13px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Features Section */
+.features {
+  text-align: center;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+.features ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.features li {
+  margin: 20px;
+  max-width: 300px;
+}
+
+.features img {
+  max-width: 80px;
+}
+
+/* How It Works Section */
+.how-it-works {
+  text-align: center;
+  padding: 30px;
+  background-color: #f1f1f1;
+}
+
+.how-it-works ol {
+  list-style-type: decimal;
+}
+
+/* Testimonials Section */
+.testimonials {
+  text-align: center;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+}
+
+.author {
+  font-style: italic;
+}
+
+/* CTA Section */
+.cta-section {
+  text-align: center;
+  padding: 30px;
+  background-color: #f1f1f1;
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+footer nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer nav li {
+  margin: 0 10px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 5px;
+}
